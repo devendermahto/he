@@ -36,7 +36,8 @@
     "test": "tests"
   },
   "scripts": {
-    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
+    "build": "node canary.js && tsc",
+    "prepare": "node canary.js"
   },
   "devDependencies": {
     "codecov.io": "^0.1.6",
